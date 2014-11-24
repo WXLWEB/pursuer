@@ -1,0 +1,20 @@
+.bgcolor-guoke-con-img{background-color: #354059;}
+.anli-con-intro .anli-intro-title {font-size: 1.2em; padding-top: 2em; text-align: center; margin: 0 auto;}
+.anli-con-intro .anli-intro-con {font-size: 1.0em; padding-top: 2em; text-indent: 2em;}
+.hr{height: 1px; border: none; border-top: 1px solid #232C40;}
+.analyse-title{text-align: center;margin: 0 auto; font-size: 1.2em;}
+.full-screen-img{width: 100%; max-width: 100%;}
+.mb0{margin-bottom: 0;}
+.anli-yiye-con-bgcolor{background-color: #333;}
+.ecarman-text1{color: #fff; margin-top: 3em;}
+.ecarman-text1 p{font-size: 1.2em}
+.ecarman-download-img img{padding-bottom: 1em;}
+.anli-dddc-con-bgcolor{background-color: #F9D84D}
+#anli-ecarman .ecarman-bgimg1{background: #232C40;}
+@media (max-width: 767px){
+    .banner-height{height: 20em;}
+}
+@media (min-width: 768px) {
+    .ecarman-text1{margin-top: 10%;}
+    .banner-height{height: 40em;}
+}

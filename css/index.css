@@ -1,0 +1,112 @@
+@media (max-width: 767px) {
+    #mycarousel {
+        top: 5.5em;
+    }
+    .intro {
+        margin-bottom: 30px;
+    }
+    .content-intro {
+        margin-top: -18px;
+    }
+    #position li{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    #position li{
+        width: 18px;
+        height: 18px;
+    }
+}
+#focus ul{list-style: none;}
+.carousel-control {
+    width: 0%;
+    opacity: 1.0;
+}
+#index #ileft a{
+    background-attachment: fixed;
+    background-position: center center;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    left: 0.5em;
+}
+#index #iright a{
+    background-attachment: fixed;
+    background-position: center center;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    right: 3.5em;
+}
+.carousel-indicators li {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid white;
+    border-radius: 18px;
+}
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 18px;
+}
+.intro {
+    padding-top: 15px;
+    text-align: center;
+}
+/***********************************************************************/
+
+.addWrap {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+.addWrap .swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+.addWrap .swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.addWrap .swipe-wrap > div {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+#position {
+    position: absolute;
+    left: 30%;
+    bottom: 5%;
+    padding-right: 8px;
+    margin: 0;
+    width: 200px;
+    filter: alpha(opacity=50);
+    text-align: right;
+}
+#position li {
+    margin-right: 15px;
+    border: 2px solid #FFF;
+    display: inline-block;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+}
+#position li.cur {
+    background-color: #fff;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

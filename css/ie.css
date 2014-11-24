@@ -1,0 +1,17 @@
+.navbar-default{height: 5.5em;}
+.navbar-default .navbar-nav {margin-top:1.35em; }
+.navbar-default .navbar-nav > li > a { color: #fff; background: none;}
+.navbar-default .navbar-nav > li > a:focus{outline: none;}
+.navbar-default .navbar-nav > li > a:active{background: none;}
+.logo1{  display: block; width: 11em; height: 4em; vertical-align: middle;  overflow: hidden; text-indent: -1000px;  background: url(../img/public/logo1.png) no-repeat center ; }
+.logo2{  display: block; width: 11em; height: 4em; vertical-align: middle;  overflow: hidden; text-indent: -1000px;  background: url(../img/public/logo2.png) no-repeat center ; }
+.navbar-default .navbar-nav .active{ border-bottom: 4px solid #fff; color: #fff;background: none;  }
+.navbar-default .navbar-nav>li>a:hover{border-bottom: 4px solid #fff ; color: #fff;background: none;  }
+.navbar-fixed-top{border-bottom:none;}
+.content .character{background: url(../img/about/pc/con-character-bg.jpg);}
+.content .character .char-text{color:#fff;}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{background: none;}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus{background: none; outline: none;}
+#anli-gy .content img { margin-top: 2em; width: 100%;  max-width: 100%;}
+#anli-ui .content img { margin-top: 2em; width: 100%;  max-width: 100%;}
+#anli-web .content img { margin-top: 2em; width: 100%;  max-width: 100%;}
