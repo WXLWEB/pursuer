@@ -570,7 +570,7 @@ if($('#mySwipe')){
         var elem = document.getElementById('mySwipe');
         var bullets = $('#position li');
         var banner = Swipe(elem, {
-            auto: 3000,
+            auto: 2500,
             continuous: true,
             disableScroll: false,
             callback: function(index,element) {

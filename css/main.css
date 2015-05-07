@@ -6201,7 +6201,7 @@ body{font-family: "Arial","STXihei","Microsoft YaHei"; line-height:2em;color:#23
 *{margin: 0; padding: 0;}
 a{background:none; outline: none;}
 a:focus,a:hover{ outline:none;text-decoration: none;}
-a img{border: none; background: none;}
+p{font-size: 1.2em}
 .bgsize100{background-size: 100%; width: 100%; max-width: 100%;}
 .xs-mb60{padding-top: 3em;}
 .xs-mt60{margin-top: 3em;}
@@ -6218,7 +6218,7 @@ a img{border: none; background: none;}
 .bgcolor-black{background-color:#232C40;}
 .linkcolor-blue{color:#025499;}
 .linkcolor-white{color:#fff;}
-.nav-index-bgcolor{background: none;}
+.nav-index-bgcolor{background: none;position: relative;z-index: 100}
 .nav-about-bgcolor{background-color: #009B4C;}
 .about-bgcolor{background-color: #009B4C;}
 .service-bgcolor{background-color: #FCB117;}
@@ -6283,12 +6283,10 @@ a img{border: none; background: none;}
     .navbar-default .navbar-nav > li > a { color: #fff; -webkit-transition: 0s;-moz-transition: 0s;-ms-transition: 0s;-o-transition: 0s;transition: 0s;}
     .logo2{-webkit-transition: 0s;-moz-transition: 0s;-ms-transition: 0s;-o-transition: 0s;transition: 0s;; display: block; width: 10em; height: 5em; vertical-align: middle;  overflow: hidden;text-indent: -1000px;  background: url(../img/public/logo2.png) no-repeat left center; margin-top: -2.2em; }
     .navbar-default .navbar-nav .active{ border-bottom: 4px solid #fff; color: #fff;background: none;  }
-    .navbar-default .navbar-nav>li>a:hover{border-bottom: 4px solid #fff ; color: #fff;background: none;  }
-    #anli-nochange-nav .navbar-default .navbar-nav > li > a{color: #025499;}
+    #anli-nochange-nav .navbar-default .navbar-nav > li > a{color: #171E24;}
+    #anli-nochange-nav .navbar-default .navbar-nav > li > a:hover{color: #025499;border-bottom: 4px solid #025499;}
     #anli-nochange-nav .navbar-fixed-top{border-bottom:1px solid gray;}
     #anli-nochange-nav .navbar-default .navbar-nav .active{ border-bottom: 4px solid #025499; color:#025499;background: none;  }
-    #anli-nochange-nav .navbar-default .navbar-nav>li>a:hover{border-bottom: 4px solid #025499 ; color: #025499;background: none;  }
-    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{background: none; color: #fff;}
     .navbar-fixed-top{border-bottom:none;}
     .content .character{background: url(../img/about/pc/con-character-bg.jpg);}
     .content .character .char-text{color:#fff;}
@@ -6354,9 +6352,8 @@ a img{border: none; background: none;}
 .show{position: relative;}
 .weixin-pursuer-1{position: absolute; z-index: 1000;left:30%;}
 .weixin-pursuer-2{position: absolute; z-index: 1000;left:-3em;}
-.show .intro-detail{ height: 9em;line-height: 2em; padding:2em 0; background-color: #000; text-indent: 1em; margin-bottom: 0; position: absolute; bottom: 0;
-    background: rgba(0, 0, 0, 0.7) !important; /* IE无效，FF有效 */
-     filter: alpha(opacity=30);
+.show .intro-detail{ height: 9em;line-height: 2em; padding:2em 0; background-color: #000; text-indent: 1em; margin-bottom: 0; position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.7) !important; /* IE无效，FF有效 */ filter: alpha(opacity=30);
+    display: none;
    }
 .show .intro-detail  .intro-project-name{font-size: 2em; color: #fff; }
 .show .intro-detail .intro-project-detail{font-size: 1.5em; color: #fff; }
@@ -6436,7 +6433,7 @@ a img{border: none; background: none;}
     opacity: 0.8;
     position: absolute;
     top: 50%;
-    z-index: 100;
+    z-index: 1000;
     left: 0.5em;
 }
 #index #iright a{
@@ -6445,7 +6442,7 @@ a img{border: none; background: none;}
     opacity: 0.8;
     position: absolute;
     top: 50%;
-    z-index: 100;
+    z-index: 1000;
     right: 3.5em;
 }
 .carousel-indicators li {

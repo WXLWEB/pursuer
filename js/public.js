@@ -2,6 +2,7 @@
 $(function(){
     var winHeight = 0,
         winWidth = 0;
+
     // 获取窗口高度
     if (window.innerHeight)
         winHeight = window.innerHeight;
@@ -42,34 +43,34 @@ $(function(){
                 $(this).find('.intro-detail').fadeOut('fast');
             });
         }
-
-
-        //默认导航条的样式
-        $('.dropdown-menu').css('display','none');
-        $('.navbar-nav .active').css('border-bottom','4px solid #fff');
-        $('#anli-nochange-nav .navbar-nav .active').css('border-bottom','4px solid #025499');
-        $('.dropdown-toggle').on({
+        $('#dropdown-anli').on({
             mouseover:function(){
-                $('.dropdown-list').show();
-                $('.dropdown-toggle').css('border-bottom', '4px solid #fff');
-                $('#anli-nochange-nav .dropdown-toggle').css('border-bottom', '4px solid #025499');
+                $('.dropdown-list-anli').show();
             },mouseout:function(){
-                $('.dropdown-list').on({mouseover:function()
+                $('.dropdown-list-anli').on({mouseover:function()
                 {
-                    $('.dropdown-list').show();
-                    $('.dropdown-toggle').css('border-bottom', '4px solid #fff');
-                    $('#anli-nochange-nav .dropdown-toggle').css('border-bottom', '4px solid #025499');
+                    $('.dropdown-list-anli').show();
                 }
                     ,mouseout:function(){
-                        $('.dropdown-toggle').css('border-bottom', '');
-                        $('.dropdown-list').hide();
-                        $('.dropdown-toggle').css('color', '#fff');
-                        $('#anli-nochange-nav  .dropdown-toggle').css('color', '#025499');
+                        $('.dropdown-list-anli').hide();
                     }
-
                 });
-                $('.dropdown-list').hide();
-                $('.dropdown-toggle').css('border-bottom', '');
+                $('.dropdown-list-anli').hide();
+            }
+        });
+        $('#dropdown-about').on({
+            mouseover:function(){
+                $('.dropdown-list-about').show();
+            },mouseout:function(){
+                $('.dropdown-list-about').on({mouseover:function()
+                {
+                    $('.dropdown-list-about').show();
+                }
+                    ,mouseout:function(){
+                        $('.dropdown-list-about').hide();
+                    }
+                });
+                $('.dropdown-list-about').hide();
             }
         });
 
@@ -111,33 +112,6 @@ $(function(){
                 });
                 $('.navbar-nav .active').css('border-bottom','4px solid #025499');
                 $('.navbar-nav .active').css('color','#025499');
-                //二级菜单鼠标划过事件
-                $('.dropdown-toggle').on({
-                    mouseover:function(){
-                        $('.dropdown-list').show();
-                        $('.dropdown-toggle').css('color', '#025499');
-                        $('.dropdown-toggle').css('border-bottom', '4px solid #025499');
-                    },mouseout:function(){
-                        $('.dropdown-list').on({mouseover:function()
-                        {
-                            $('.dropdown-list').show();
-                            $('.dropdown-toggle').css('color', '#025499');
-                            $('.dropdown-toggle').css('border-bottom', '4px solid #025499');
-                        }
-                            ,mouseout:function(){
-                                $('.dropdown-list').hide();
-                                $('.dropdown-toggle').css('color', '#171E24');
-                                $('.dropdown-toggle').css('border-bottom', 'none');
-                            }
-
-                        });
-                        $('.dropdown-toggle').css('color', '#171E24');
-                        $('.dropdown-list').hide();
-                        $('.dropdown-toggle').css('background-color', '');
-                        $('.dropdown-toggle').css('border-bottom', 'none');
-                    }
-                });
-
 
             }else {
                 //当滚动条不滚动时换回导航条
@@ -162,9 +136,9 @@ $(function(){
                 $('.logo2').removeClass('logo2').addClass('logo1');
                 $('#anli-nochange-nav .logo1').removeClass('logo1').addClass('logo2');
                 $('.navbar-default .navbar-nav>li>a').css('color','#fff');
-                $('#anli-nochange-nav .navbar-default .navbar-nav>li>a').css('color','#025499');
+                $('#anli-nochange-nav .navbar-default .navbar-nav>li>a').css('color','#171E24');
                 $('.navbar-fixed-top').css('border-bottom','none');
-                $('#anli-nochange-nav .navbar-fixed-top').css('border-bottom','1px solid gray');
+                $('#anli-nochange-nav  .navbar-fixed-top').css('border-bottom','1px solid gray');
                 $('.navbar-default .navbar-nav>li>a').hover(function(){
                     $(this).css('border-bottom','4px solid #fff');
                     $(this).css('color','#fff');
@@ -178,31 +152,8 @@ $(function(){
                 });
 
                 $('.navbar-default .navbar-nav .active').css('border-bottom','4px solid #fff');
-                $('.dropdown-toggle').on({
-                    mouseover:function(){
-                        $('.dropdown-list').show();
-                        $('.dropdown-toggle').css('color', '#fff');
-                        $('.dropdown-toggle').css('border-bottom', '4px solid #fff');
-                    },mouseout:function(){
-                        $('.dropdown-list').on({mouseover:function()
-                        {
-                            $('.dropdown-list').show();
-                            $('.dropdown-toggle').css('border-bottom', '4px solid #fff');
-                            $('.dropdown-toggle').css('color', '#fff');
-                        }
-                            ,mouseout:function(){
-                                $('.dropdown-toggle').css('color', '#fff');
-                                $('.dropdown-toggle').css('border-bottom', '');
-                                $('.dropdown-toggle').css('background-color', '');
-                                $('.dropdown-list').hide();
-                            }
 
-                        });
-                        $('.dropdown-toggle').css('color', '#fff');
-                        $('.dropdown-list').hide();
-                        $('.dropdown-toggle').css('border-bottom', '');
-                    }
-                });
+                // 滚动条滚回原始位置后案例下拉表
                 $('#anli-nochange-nav .navbar-default .navbar-nav>li>a').hover(function(){
                     $(this).css('border-bottom','4px solid #025499');
                     $(this).css('color','#025499');
@@ -235,25 +186,12 @@ $(function(){
                             }
 
                         });
-                        $('#anli-nochange-nav .dropdown-toggle').css('color', '#171E24');
                         $('#anli-nochange-nav .dropdown-list').hide();
-                        $('#anli-nochange-nav .dropdown-toggle').css('background-color', '');
                         $('#anli-nochange-nav .dropdown-toggle').css('border-bottom', 'none');
                     }
                 });
-
-
             }
         })
-
-    }
-    else{
-         $('.dropdown-toggle').on('click', function () {
-                $('.navbar-nav .active').css('background-color', '#fff');
-                $('.navbar-nav .active').css('color', '#025499');
-                $('.dropdown-toggle').css('background-color','#025499');
-                $('.dropdown-toggle').css('color','#fff');
-         });
 
     }
 });

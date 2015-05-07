@@ -1,0 +1,97 @@
+.news .header .hd-banner {
+  margin-top: 0;
+}
+.bgcolorsliver {
+  background-color: #c0c0c0;
+}
+#main {
+  position: relative;
+  margin-top: 30px;
+}
+#list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #232C40;
+  list-style-type: none;
+}
+#list li {
+  display: list-item;
+  background-color: #fff;
+}
+#list img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+#list h2 {
+  font-size: 1.5em;
+  padding: 0 1em;
+}
+#list .info-content {
+  font-size: 1.2em;
+  padding: 0 1em;
+}
+#list .info-from {
+  font-size: 1em;
+  padding: 0 1em;
+}
+#list span {
+  float: right;
+  font-size: 1.2em;
+  color: #025499;
+}
+#list span i {
+  float: right;
+  font-size: 1.2em;
+  color: #f08519;
+}
+#list .likes {
+  font-size: 1em;
+  padding-left: 1em;
+}
+.side {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  width: 10em;
+  color: #232C40;
+}
+.side .menuside {
+  font-size: 1.2em;
+  text-align: center;
+}
+.side li {
+  margin: 0.8em 1.8em 0 1.8em;
+  border-bottom: 1px dashed;
+}
+.side .active {
+  color: #025499;
+}
+.side .news-share {
+  margin-top: 60%;
+  padding: 0 1em;
+}
+.side .weixin-pursuer {
+  padding-top: 1em;
+}
+/*newsdetail页面*/
+.news-content {
+  padding: 1em;
+  background-color: #fff;
+}
+#relative-list {
+  margin: 0;
+  padding: 0;
+}
+#relative-list li {
+  margin: 2em 2em 0 0;
+  width: 280px;
+  float: left;
+  background-color: #fff;
+}
+#relative-list li img {
+  max-width: 100%;
+  height: 200px;
+}
+

@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>pursuer&nbsp;|&nbsp;全球化用户体验咨询有限公司</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="renderer" content="webkit">
+    <title>pursuer&nbsp;|&nbsp;全球化用户体验咨询公司</title>
     <meta name="keywords" content="设计,普修设计,用户体验设计,移动互联网,用户体验咨询公司,品牌策略,数字营销,ui设计, 视觉设计,交互设计,工业设计,响应式设计,用户研究,市场竞争分析,可用性测试,市场调研,行业分析,创新设计,移动互联网市场调研,智能医疗行业,智能金融">
     <meta name="description" content="普修设计专注用户体验设计,为客户提供用户研究、市场分析、交互设计、UI界面设计、APP设计、网站设计、响应式网站设计、工业设计、品牌策划以及移动应用开发与测试等全方位解决方案。">
     <link rel="shortcut icon" href="../img/title-logo/favicon.ico" type="image/x-icon">
@@ -13,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../css/main.min.css" />
 
     <!--[if lt IE 9]>
-    <script src="../js/html5shiv.js"></script>
+    <script src="../js/html5shiv.min.js"></script>
     <script src="../js/respond.min.js"></script>
     <![endif]-->
     <script>
@@ -26,41 +28,60 @@
 
 <body id="anli-nochange-nav">
 <!--头部-->
-<div class="header">
-    <nav class="navbar navbar-default navbar-fixed-top nav-bgcolor-white" role="navigation">
+<div class="header clearfix">
+    <nav class="navbar navbar-default navbar-static-top nav-bgcolor-white" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><span class="iconfont logo2">&#xe606;</span></a>
+                <a class="navbar-brand" href="../index.html"><span class="iconfont logo1">&#xe606;</span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse linkcolor-blue" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li ><a href="../index.html">首页</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="active dropdown-toggle" data-toggle="dropdown">案例 <span class="caret"></span></a>
+                    <li class="dropdown clearfix" id="dropdown-anli">
+                        <a href="#" class="dropdown-toggle  active" data-toggle="dropdown" role="button" aria-expanded="false">案例<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="../anli-ui.html" target="_parent" >App设计</a></li>
+                            <li><a class="border-right" href="../anli-ui.html" target="_parent" >App设计</a></li>
                             <li><a href="../anli-web.html" target="_parent">网站设计</a></li>
-                            <li><a href="../anli-gy.html" target="_parent">工业设计</a></li>
+                            <li  class="active"><a class="border-right" href="../anli-gy.html" target="_parent">工业设计</a></li>
                             <li><a href="#">品牌设计</a></li>
                         </ul>
                     </li>
-                    <li ><a href="../designresearch.html">设计研究</a></li>
-                    <li><a  href="../about.html">关于我们</a></li>
-                    <li><a  href="../service.html">服务</a></li>
-                    <li><a  href="http://pursuerdesign.lofter.com/" target="_blank">博客</a></li>
+                    <li class="dropdown clearfix" id="dropdown-about">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">关于我们<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="border-right" href="../about.html" target="_parent" >关于我们</a></li>
+                            <li><a href="../service.html" target="_parent">服务范围</a></li>
+                            <li><a class="border-right" href="#">招贤纳士</a></li>
+                            <li><a href="../designresearch.html" target="_parent">设计研究</a></li>
+                        </ul>
+                    </li>
+                    <li class="clearfix hidden-xs"><a id="article-news" href="../news.html">行内资讯</a></li>
+                    <li class="dropdown clearfix visible-xs">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">行内资讯<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" id="articlemenu2">
+                            <li><a class="border-right" href="../news.html" target="_parent">行内资讯</a></li>
+                            <li><a href="javascript:void(0)">用户调研</a></li>
+                            <li><a class="border-right" href="javascript:void(0)">设计荟萃</a></li>
+                            <li><a href="javascript:void(0)">技术荟萃</a></li>
+                            <li><a class="border-right" href="#">普修观点</a></li>
+                            <li><a href="javascript:void(0)">网址导航</a></li>
+                        </ul>
+                    </li>
+                    <li class="clearfix"><a href="../English/index.html">English</a></li>
                 </ul>
-            </div>
+            </div><!-- /.navbar-collapse -->
         </div>
     </nav>
-    <div class="dropdown-list" style="display: none; position: fixed;">
+    <div class="dropdown-list-anli" style="display: none; position: fixed;">
         <ul class="drop-detail">
             <li class="drop-border"><a href="../anli-ui.html" target="_parent">App设计</a></li>
             <li class="drop-border"><a href="../anli-web.html" target="_parent">网站设计</a></li>
@@ -68,7 +89,14 @@
             <li><a href="#">品牌设计</a></li>
         </ul>
     </div>
-
+    <div class="dropdown-list-about" style="display: none; position: fixed;">
+        <ul class="drop-detail">
+            <li class="drop-border"><a href="../about.html" target="_parent">关于我们</a></li>
+            <li class="drop-border"><a href="../service.html" target="_parent">服务范围</a></li>
+            <li class="drop-border"><a href="#">招贤纳士</a></li>
+            <li><a href="../designresearch.html" target="_parent">设计研究</a></li>
+        </ul>
+    </div>
 </div>
 <!--内容-->
 <div class="content xs-mt5em">
@@ -162,7 +190,7 @@
             <div class="col-sm-4 col-xs-12">
                 <div class="contacts">
                     <div class="site">
-                        <strong>北京（总部）</strong>
+                        <strong>北京(总部)</strong>
                     </div>
 
                     <p class="linkmethod">高先生
@@ -178,8 +206,8 @@
                         <strong>北京</strong>
                     </div>
 
-                    <p class="linkmethod">张先生
-                        <br>010-56281827&nbsp;/&nbsp;18500263180
+                    <p class="linkmethod">吴小姐
+                        <br>010-56281827&nbsp;/&nbsp;13381107724
                         <br>zzy@pursuer.cn
                         <br>北京市海淀区中关村大街1号梦想实验室5层
                     </p>
@@ -188,10 +216,11 @@
         </div>
     </div>
 
-    <div class="foot-detail">Copyright © 2009 2015 pursuer design All rights reserved 京ICP备10002028号</div>
+    <div class="foot-detail">Copyright © 2009 2015 pursuer design All rights reserved 京ICP备14056106号-2</div>
+</div>
+<div id="top" class="hidden-xs">
 </div>
 <script src="../js/main.min.js"></script>
-
+<script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F30d2af07504b9c0eb20c5db9611822ae' type='text/javascript'%3E%3C/script%3E")) </script>
 </body>
-
 </html>

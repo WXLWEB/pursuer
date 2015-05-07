@@ -14,14 +14,14 @@ function banner() {
 
         var $imgs1 = $(".swipe-wrap").find('img');
         $imgs1.each(function(index, val) {
-            this.src = "http://pursuer.cn/img/index/indexxs/" + (index + 1) + ".jpg";
+            this.src = "img/index/indexxs/" + (index + 1) + ".jpg";
         });
         $(".swipe-wrap").css({
             height: "auto"
         });
     } else if (width < 992) {
         $imgs.each(function(index, el) {
-            this.src = "http://pursuer.cn/img/index/indexsm/" + (index + 1) + ".jpg";
+            this.src = "img/index/indexsm/" + (index + 1) + ".jpg";
             $(this).css("max-width", "100% ");
         });
         $(".carousel-inner").css({
@@ -30,7 +30,7 @@ function banner() {
     } else if (width < 1200) {
 
         $imgs.each(function(index, el) {
-            this.src = "http://pursuer.cn/img/index/indexmd/" + (index + 1) + ".jpg";
+            this.src = "img/index/indexmd/" + (index + 1) + ".jpg";
             $(this).css("max-width", "100% ");
         });
         $(".carousel-inner").css({
@@ -38,7 +38,7 @@ function banner() {
         });
     } else {
         $imgs.each(function(index, el) {
-            this.src = "http://pursuer.cn/img/index/indexlg/" + (index + 1) + ".jpg";
+            this.src = "img/index/indexlg/" + (index + 1) + ".jpg";
             $(this).css("max-width", "100% ");
         });
         $(".carousel-inner").css({
@@ -58,7 +58,7 @@ function banner() {
         }
         if (width < 768) {
             $imgs.each(function(index, el) {
-                this.src = "http://pursuer.cn/img/index/indexxs/" + (index + 1) + ".jpg";
+                this.src = "img/index/indexxs/" + (index + 1) + ".jpg";
                 $(this).css("width", "100% ");
             });
             $(".carousel-inner").css({
@@ -66,11 +66,11 @@ function banner() {
             });
             var $imgs1 = $(".swipe-wrap").find('img');
             $imgs1.each(function(index, val) {
-                this.src = "http://pursuer.cn/img/index/indexxs/" + (index + 1) + ".jpg";
+                this.src = "img/index/indexxs/" + (index + 1) + ".jpg";
             });
         } else if (width < 992) {
             $imgs.each(function(index, el) {
-                this.src = "http://pursuer.cn/img/index/indexsm/" + (index + 1) + ".jpg";
+                this.src = "img/index/indexsm/" + (index + 1) + ".jpg";
                 $(this).css("max-width", "100% ");
             });
             $(".carousel-inner").css({
@@ -79,7 +79,7 @@ function banner() {
         } else if (width < 1200) {
 
             $imgs.each(function(index, el) {
-                this.src = "http://pursuer.cn/img/index/indexmd/" + (index + 1) + ".jpg";
+                this.src = "img/index/indexmd/" + (index + 1) + ".jpg";
                 $(this).css("max-width", "100% ");
             });
             $(".carousel-inner").css({
@@ -87,7 +87,7 @@ function banner() {
             });
         } else {
             $imgs.each(function(index, el) {
-                this.src = "http://pursuer.cn/img/index/indexlg/" + (index + 1) + ".jpg";
+                this.src = "img/index/indexlg/" + (index + 1) + ".jpg";
                 $(this).css("max-width", "100% ");
             });
             $(".carousel-inner").css({

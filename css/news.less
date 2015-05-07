@@ -1,0 +1,459 @@
+/*变量*/
+@blue:#025499;
+@deepblack:#232C40;
+@black:#70778c;
+@write:#fff;
+@gray:#dcdddd;
+@hoverorange:#f08519;
+.newsbulebgcolor{background-color: @blue;}
+.mt2em{margin-top:2em}
+.transtion(@seconds:1s){
+  -webkit-transition: @seconds time;
+  -moz-transition: @seconds time;
+  -ms-transition: @seconds time;
+  -o-transition: @seconds time;
+  transition: @seconds time;
+}
+.border-radius(@chamfer:50px){
+  border-radius:@chamfer;
+  -webkit-border-radius:@chamfer;
+  -moz-border-radius:@chamfer;
+}
+.img-responsive{width: 100%;}
+/*news页面*/
+.hd-banner{
+  .transtion(0s);
+  color: @write;
+  padding: 2.5em 0;
+  .news-share{
+    margin: 2em 0;
+  }
+  .weixin-pursuer{
+    position: absolute;
+    top:8em;
+    left: 50%;
+    z-index: 100;
+    display: inline;
+  }
+  .iconfont-news-share{
+    display: inline-block;
+    color: @write;
+    font-size: 4em;
+    float: left;
+    border:1px solid @write;
+    .border-radius();
+    &:hover{
+      color: @blue;
+      background: @write;
+      border:1px solid @write;
+      .border-radius();
+    }
+  }
+  .bdshare-button-style0-32 a{
+    .transtion(0s);
+    width: 1.1em;
+    height: 1.1em;
+    background:none;
+    line-height: 1em;
+    overflow: visible;
+    text-indent: 0;
+    text-align:middle;
+    color: @write;
+    float: right;
+    margin-right: 2%;
+    &:first-child{margin-right: 10%}
+
+  }
+}
+#main{
+  @media (max-width: 767px) {
+    margin-top: 7em;
+  }
+  .item{background-color: @write;position: relative;
+    @media (min-width: 768px) {
+      height:27em;
+    }
+    @media (min-width: 992px) {
+      height:22em;
+    }
+    .transtion();
+    &:hover{
+      .transtion(0);
+      box-shadow:5px 5px 5px @black ;
+      -moz-box-shadow: 5px 5px 5px @black;
+    }
+    overflow: hidden;
+  }
+  img{
+   width: 100%;max-width: 100%;height: auto;
+  }
+
+  h2{
+    font-size: 1.2em;
+    padding:0 1em;
+    margin:0.4em  0;
+    color: @blue;
+  }
+  p{
+    color: @black;
+  }
+  .info{position:absolute;z-index:10;bottom:0;padding: 0.3em;background-color: @write; width:100%;max-width: 100%;}
+  .info-content{
+    font-size: 1em;
+    padding:0 1em;
+    margin: 0.2em 0;
+  }
+  .info-from{
+    font-size:0.8em;
+    padding:0 1em;
+    margin: 0;
+    vertical-align:middle;
+  }
+  span{
+    font-size: 1em;
+    padding-top: 0.5em;
+    color: @blue;
+    float: right;
+    vertical-align:middle;
+    i{
+      color: #f08519;
+    }
+  }
+  .likes{
+    font-size: 1em;
+    padding-left: 0.2em;
+  }
+}
+//侧边栏
+.side{
+    background-color: #fff;
+    position: relative;
+  .menuside{
+      font-size: 1.2em;
+      text-align: center;
+      margin: 0 auto;
+
+    }
+    li{
+      display: inline;
+      .transtion(0s);
+      padding:0.8em 0.5em;
+     &:hover{
+        border-bottom:4px solid @blue ;
+       cursor: pointer;
+       a{
+          color: @blue;
+        }
+      }
+    }
+    a{
+      .transtion(0s);
+      color: @black;
+      &:hover{
+        color: @blue;
+      }
+    }
+    .active{
+      a{
+        color: @blue;
+      }
+      border-bottom:4px solid @blue ;
+    }
+
+}
+/*newsdetail页面*/
+.newsdetail-content{
+  margin-top: 7em;
+  @media (max-width: 767px) {
+    margin-top: 5.5em;
+  }
+  padding:2em 1em 1em;
+  background-color: #fff;
+  #title{
+    display: inline;
+    font-size: 1.8em;
+  }
+  #content{
+    margin-top: 2em;
+    img{
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  .iconfont-arrowleft{
+    color: @write;
+    font-size: 2.5em;
+    background-color: @blue;
+    border: 4px solid @blue;
+    &:hover{
+      background-color: #f08519;
+      color: @blue;
+      border: 4px solid #f08519;
+    }
+  }
+}
+.newsdetail-share{
+  .sinaweibo,.weixin,.tengxunweibo,.more{
+    margin:10%;
+    display: inline-block;
+    color: @blue;
+    font-size: 4em;
+    .border-radius();
+    &:hover {
+      background: @write;
+      border: 1px solid @write;
+      .border-radius();
+    }
+  }
+  .sinaweibo{
+    color: red;
+    border: 1px solid red;
+    &:hover{
+      color: @write;
+      background-color: red;
+      border: 1px solid red;
+    }
+  }
+  .weixin{
+    color: green;
+    border: 1px solid green;
+    &:hover{
+      color: @write;
+      background-color: green;
+      border: 1px solid green;
+    }
+  }
+  .tengxunweibo{
+    color: blue;
+    border: 1px solid blue;
+    &:hover{
+      color: @write;
+      background-color: blue;
+      border: 1px solid blue;
+    }
+  }
+  .more{
+    color: @blue;
+    border: 1px solid @blue;
+    &:hover{
+      color: @write;
+      background-color: @blue;
+      border: 1px solid @blue;
+    }
+  }
+  .bdshare-button-style0-32 a{
+    width: 1.1em;
+    height: 1.1em;
+    background:none;
+    line-height: 1em;
+    overflow: visible;
+    text-indent: 0;
+    text-align:middle;
+  }
+}
+  @media (max-width: 768px) {
+    .newsdetailInApp {padding: 0;}
+    #relative-list{
+      margin-top: 2em;
+    }
+  }
+@media (min-width: 768px) {
+  #relative-list{
+    margin-top: 7em;
+  }
+}
+#relative-list{
+  .newsdetail-share{
+    padding: 1em;
+    background-color: @write;
+  }
+  position: relative;
+  .relative-article{
+    margin-top:2em;
+    &:first-child{
+      margin-top:0 ;
+    }
+    background-color: @write;
+  }
+  h2{
+    font-size: 1.2em;
+    padding:0 1em;
+    color: @blue;
+  }
+  h3{
+    border-bottom: 1px solid @black;
+    margin-top: 0;
+  }
+  p{
+    color: @black;
+  }
+  .info-content{
+    font-size: 1em;
+    padding:0 1em;
+  }
+  .info-from{
+    font-size: 0.8em;
+    padding:0 1em 1em 1em;
+    margin: 0;
+    vertical-align: middle;
+  }
+  span{
+    float: right;
+    padding-top:0.5em;
+    color: @blue;
+    i{
+      float: right;
+      color: #f08519;
+    }
+  }
+  .likes{
+    font-size: 0.8em;
+    padding-left: 0.2em;
+  }
+}
+.footer2{
+  background-color: @write;
+}
+
+/*网址导航页面*/
+#list{
+  position:relative;margin:0;padding:0;list-style-type:none;margin-top: 2em;
+  li{
+    .transtion();
+    width: 15em;
+    display:none;
+  }
+  .type{
+    .iconfont{
+      font-size: 1.5em;color: @hoverorange;
+    }
+    .typename{
+      color:@hoverorange;
+      text-align: left;
+      font-size: 1.5em;
+      margin:0;
+      padding-bottom: 1em;
+      border-bottom: 1px dashed @black;
+    }
+    i{padding: 0 0.5em}
+    .website{
+      border-bottom: 1px dashed @black;
+      background-color: @gray;
+      &:hover{background-color:@write}
+    }
+    h2{
+      margin: 0;
+      padding: 1em 1em 0.2em;
+    }
+    p{
+      color: @black;
+      padding:0 1em 1em;
+      margin: 0;
+      font-size: 0.8em;
+    }
+  }
+}
+.izl-rmenu{position:fixed;bottom:5%;right:1%;z-index:999;
+  .transtion(0s);
+  width: 74px;
+  .btn{width:72px;height:73px;margin-bottom:1px;cursor:pointer;position:relative;.border-radius(0)}
+  .btn-qq{background-color:@blue;margin-top:-8px;}
+  a.btn-qq,.izl-rmenu a.btn-qq:visited{background:url(../img/images/r_qq.png) 0px 0px no-repeat;background-color:@blue;text-decoration:none;display:block;}
+  .btn-sq{background-color:@blue;}
+  .btn-sq .pic{position:absolute;left:-160px;top:0px;display:none;width:160px;height:160px;}
+  .btn-phone{background:url(../img/images/r_phone.png) 0px 0px no-repeat;background-color:@blue;}
+  .phone,.qq,.top,.sq{background-color:@blue;position:absolute;width:160px;left:-160px;top:0px;line-height:73px;color:#FFF;font-size:18px;text-align:center;display:none;}
+  .btn-top{background:url(../img/images/r_top.png) 0px 0px no-repeat;background-color:@blue;display:none;
+  }
+}
+.load-container {
+  width: 50%;
+  display: inline;
+  height: 10em;
+  position: relative;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.loader {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loadword{
+  display: inline;
+}
+.load .loader {
+  font-size: 1em;
+  margin: 5em auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: 5em;
+  -webkit-animation: load 1.3s infinite linear;
+  animation: load 1.3s infinite linear;
+}
+.loadend{
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
+@-webkit-keyframes load {
+  0%,
+  100% {
+    box-shadow: 0em -3em 0em 0.2em #ffffff, 2em -2em 0 0em #ffffff, 3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 -0.5em #ffffff, -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff, -2em -2em 0 0em #ffffff;
+  }
+  12.5% {
+    box-shadow: 0em -3em 0em 0em #ffffff, 2em -2em 0 0.2em #ffffff, 3em 0em 0 0em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 -0.5em #ffffff, -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff, -2em -2em 0 -0.5em #ffffff;
+  }
+  25% {
+    box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 0em #ffffff, 3em 0em 0 0.2em #ffffff, 2em 2em 0 0em #ffffff, 0em 3em 0 -0.5em #ffffff, -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff, -2em -2em 0 -0.5em #ffffff;
+  }
+  37.5% {
+    box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff, 3em 0em 0 0em #ffffff, 2em 2em 0 0.2em #ffffff, 0em 3em 0 0em #ffffff, -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff, -2em -2em 0 -0.5em #ffffff;
+  }
+  50% {
+    box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff, 3em 0em 0 -0.5em #ffffff, 2em 2em 0 0em #ffffff, 0em 3em 0 0.2em #ffffff, -2em 2em 0 0em #ffffff, -3em 0em 0 -0.5em #ffffff, -2em -2em 0 -0.5em #ffffff;
+  }
+  62.5% {
+    box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff, 3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 0em #ffffff, -2em 2em 0 0.2em #ffffff, -3em 0em 0 0em #ffffff, -2em -2em 0 -0.5em #ffffff;
+  }
+  75% {
+    box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff, 3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 -0.5em #ffffff, -2em 2em 0 0em #ffffff, -3em 0em 0 0.2em #ffffff, -2em -2em 0 0em #ffffff;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0em 0em #ffffff, 2em -2em 0 -0.5em #ffffff, 3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 -0.5em #ffffff, -2em 2em 0 0em #ffffff, -3em 0em 0 0em #ffffff, -2em -2em 0 0.2em #ffffff;
+  }
+}
+@keyframes load {
+  0%,
+  100% {
+    box-shadow: 0em -3em 0em 0.2em #ffffff, 2em -2em 0 0em #ffffff, 3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 -0.5em #ffffff, -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff, -2em -2em 0 0em #ffffff;
+  }
+  12.5% {
+    box-shadow: 0em -3em 0em 0em #ffffff, 2em -2em 0 0.2em #ffffff, 3em 0em 0 0em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 -0.5em #ffffff, -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff, -2em -2em 0 -0.5em #ffffff;
+  }
+  25% {
+    box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 0em #ffffff, 3em 0em 0 0.2em #ffffff, 2em 2em 0 0em #ffffff, 0em 3em 0 -0.5em #ffffff, -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff, -2em -2em 0 -0.5em #ffffff;
+  }
+  37.5% {
+    box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff, 3em 0em 0 0em #ffffff, 2em 2em 0 0.2em #ffffff, 0em 3em 0 0em #ffffff, -2em 2em 0 -0.5em #ffffff, -3em 0em 0 -0.5em #ffffff, -2em -2em 0 -0.5em #ffffff;
+  }
+  50% {
+    box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff, 3em 0em 0 -0.5em #ffffff, 2em 2em 0 0em #ffffff, 0em 3em 0 0.2em #ffffff, -2em 2em 0 0em #ffffff, -3em 0em 0 -0.5em #ffffff, -2em -2em 0 -0.5em #ffffff;
+  }
+  62.5% {
+    box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff, 3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 0em #ffffff, -2em 2em 0 0.2em #ffffff, -3em 0em 0 0em #ffffff, -2em -2em 0 -0.5em #ffffff;
+  }
+  75% {
+    box-shadow: 0em -3em 0em -0.5em #ffffff, 2em -2em 0 -0.5em #ffffff, 3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 -0.5em #ffffff, -2em 2em 0 0em #ffffff, -3em 0em 0 0.2em #ffffff, -2em -2em 0 0em #ffffff;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0em 0em #ffffff, 2em -2em 0 -0.5em #ffffff, 3em 0em 0 -0.5em #ffffff, 2em 2em 0 -0.5em #ffffff, 0em 3em 0 -0.5em #ffffff, -2em 2em 0 0em #ffffff, -3em 0em 0 0em #ffffff, -2em -2em 0 0.2em #ffffff;
+  }
+}

@@ -14,49 +14,84 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-@media (max-width: 480px) {
-    .iconfont-weibo,.iconfont-qq,.iconfont-weixin,.iconfont-huaban,.iconfont-whitecircle,.iconfont-whitecircle {font-size: 4em;padding-right: 4%;}
-}
-@media (min-width: 480px) {
-    .iconfont-weibo,.iconfont-qq,.iconfont-weixin,.iconfont-huaban,.iconfont-whitecircle,.iconfont-whitecircle {font-size: 5.5em;padding-right: 4%;}
-}
-@media (min-width: 768px) {
-    .iconfont-weibo,.iconfont-qq,.iconfont-weixin,.iconfont-huaban,.iconfont-whitecircle,.iconfont-whitecircle {font-size: 30px;padding-right: 4%;}
-}
-.icon-weixin:before { content: "\e605"; }
-.iconfont-weixin{color:#009b4c;vertical-align: middle; line-height: 1em;position:relative;  z-index:2}
+
+.icon-shoucangjia:before { content: "\e62b"; }
 
 .icon-weibo:before { content: "\e600"; }
-.iconfont-weibo{color: #E32529;vertical-align: middle; line-height: 1em;position:relative;  z-index:2}
+
+.icon-shouji:before { content: "\e60d"; }
 
 .icon-app:before { content: "\e603"; }
-.iconfont-app{font-size: 190px; color: #E32529;vertical-align: middle; line-height: 1em;}
 
 .icon-brand:before { content: "\e601"; }
-.iconfont-brand{font-size: 190px; color: #00A2E9;vertical-align: middle; line-height: 1em;}
 
 .icon-gy:before { content: "\e602"; }
-.iconfont-gy{font-size: 190px; color: #009b4c;vertical-align: middle; line-height: 1em;}
 
 .icon-huaban:before { content: "\e604"; }
-.iconfont-huaban{color: #DB094F;vertical-align: middle; line-height: 1em;position:relative;  z-index:2}
 
 .icon-logo:before { content: "\e606"; }
-.logo1{  font-size:60px; color: #fff;margin-top: 1em;-webkit-transition: 0s;-moz-transition: 0s;  -ms-transition: 0s;-o-transition: 0s; transition: 0s}
 
 .icon-qq:before { content: "\e607"; }
-.iconfont-qq{color: #f08519;vertical-align: middle; line-height: 1em;position:relative;  z-index:2}
 
 .icon-web:before { content: "\e608"; }
-.iconfont-web{font-size: 190px; color: #f08519;vertical-align: middle; line-height: 1em;}
 
 .icon-whitecircle:before { content: "\e609"; }
-.iconfont-whitecircle{color: #fff;vertical-align: middle; line-height: 1em;position:absolute;z-index:1;}
 
-.icon-arrowleft:before { content: "\e60a"; }
-.iconfont-arrowleft{font-size: 60px; color: #fff;}
-.iconfont-arrowleft:hover{color: #025499; background: #fff;}
+.icon-arrow-left:before { content: "\e60a"; }
+
 .icon-kongxinyuan:before { content: "\e60b"; }
 
 .icon-arrowright:before { content: "\e60c"; }
-.iconfont-arrowright{font-size: 50px; color: #fff;}
+
+.icon-weixin:before { content: "\e605"; }
+
+.icon-font:before { content: "\e60e"; }
+
+.icon-news:before { content: "\e60f"; }
+
+.icon-team:before { content: "\e610"; }
+
+.icon-picturestorage:before { content: "\e611"; }
+
+.icon-chart:before { content: "\e612"; }
+
+.icon-icon:before { content: "\e613"; }
+
+.icon-material:before { content: "\e614"; }
+
+.icon-datastatistics:before { content: "\e615"; }
+
+.icon-practical:before { content: "\e616"; }
+
+.icon-community:before { content: "\e617"; }
+
+.icon-color:before { content: "\e618"; }
+
+.icon-front:before { content: "\e619"; }
+
+.icon-other:before { content: "\e61a"; }
+
+.icon-inspiration:before { content: "\e61b"; }
+
+.icon-coolsite:before { content: "\e61c"; }
+
+.icon-course:before { content: "\e61d"; }
+
+.icon-interaction:before { content: "\e61e"; }
+
+.icon-contest:before { content: "\e61f"; }
+
+.icon-product:before { content: "\e620"; }
+
+.icon-illustration:before { content: "\e621"; }
+
+.icon-gotoTop:before { content: "\e626"; }
+
+.icon-news-tengxunweibo:before { content: "\e622"; }
+
+.icon-news-more:before { content: "\e62c"; }
+
+.icon-news-weixin:before { content: "\e62d"; }
+
+.icon-news-weibo:before { content: "\e62e"; }
+
